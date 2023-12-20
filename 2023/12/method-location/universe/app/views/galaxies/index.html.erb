@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Galaxies</h1>
+
+<div id="galaxies">
+  <% @galaxies.each do |galaxy| %>
+    <%= render galaxy %>
+    <p>
+      <%= link_to "Show this galaxy", galaxy %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New galaxy", new_galaxy_path %>
